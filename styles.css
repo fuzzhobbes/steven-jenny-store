@@ -1,0 +1,308 @@
+:root {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    min-height: 100vh;
+    max-width: 1280px;
+    background-color: beige;
+    margin: 0 auto;
+}
+
+body {
+    margin: 10px;
+    background-color: white;
+    border: 3px solid rgb(186, 186, 221);
+}
+
+.page-container {
+    margin-bottom: 70px;
+}
+
+
+nav {
+    background-color: bisque;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+nav .logo {
+    display: flex;
+    align-items: center;
+}
+
+nav .logo img {
+    width: 56px;
+    height: 56px;
+    padding: 8px;
+    border-radius: 50%;
+}
+nav .logo .title {
+    color: black;
+    font-size: 24px;
+    font-weight: bold;
+    padding-left: 20px;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    list-style: none;
+}
+
+nav ul li {
+    color: darkgoldenrod;
+    padding: 22px 40px;
+    background-color: darkslategray;
+}
+
+nav ul li:hover {
+    background-color: rgb(37, 37, 31);
+}
+nav ul li.active {
+    background-color: darkgreen;
+}
+
+nav ul li a {
+    color: aliceblue;
+    text-decoration: none;
+}
+
+@media all and (max-width: 800px) {
+    nav {
+        justify-content: flex-start;
+    }
+
+    nav ul {
+        justify-content: space-between;
+    }
+}
+
+@media all and (max-width: 600px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul {
+        width: 100%;
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    nav ul li {
+        text-align: center;
+    }
+}
+
+.banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 450px;
+    background-image: url('https://st5.depositphotos.com/4256003/64429/i/450/depositphotos_644296576-stock-photo-beautiful-crystal-forest-digital-art.jpg');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    border: 4px solid darkgoldenrod;
+    border-radius: 10%;
+    margin-left: 10px;
+    padding-right: 95px;
+    
+}
+    
+    
+
+@keyframes appear {
+    from {
+        opacity: 0.0;
+        top: -100px;
+    }
+
+    to {
+        opacity: 1.0;
+        top: 0.0;
+    }
+}
+
+.banner  .heading {
+    flex: 1;
+    justify-self: center;
+    color: aliceblue;
+    font-size: 3em;
+    font-weight: bold;
+    position: center;
+    animation: appear 1s ease-in-out 0s forwards;
+}
+
+.banner .heading small {
+    font-size: 24px;
+}
+
+.maintext {
+    font-size: 18px;
+    padding: 12px;
+}
+
+.subtext {
+    display: flex;
+}
+
+.subtext div {
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    color: rgb(246, 249, 250);
+}
+
+.subtext .red {
+    background-color: darkgoldenrod;
+    background-image: url(https://pbs.twimg.com/media/FcOfgKPXoAAzBWw.jpg:large);
+    border: 2px solid goldenrod;
+    border-radius: 20%;
+    background-size: cover;
+    
+}
+
+.subtext .yellow {
+    background-color: darksalmon;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT77ekMsXvfRdVtc7ARmsfAESsU2tI1NehufQ&s);
+    background-size: cover;
+    border-radius: 20%;
+    border: 2px solid darkgoldenrod;
+    color: black;
+}
+
+
+
+.subtext .green {
+    background-color: burlywood;
+    background-image: url(https://img77.uenicdn.com/image/upload/v1654408394/business/1831d5ad-7800-42fe-ba8c-882afdb90f4f.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 20%;
+    border: 2px solid darkgoldenrod;
+}
+
+
+.quote {
+    display: block;
+    background-color: burlywood;
+    padding: 50px;
+    text-align: center;
+    font-style: italic;
+}
+
+.quote::before {
+    display: inline-block;
+    content: open-quote;
+    color: black;
+    font-size: 32px;
+}
+
+.quote::after {
+    display: inline-block;
+    content: close-quote;
+    color: black;
+    font-size: 32px;
+}
+
+h3.title {
+    font-size: 24px;
+    padding: 12px;
+    margin: 6px;
+    border-top: 5px solid darkgreen;
+    border-bottom: 5px solid darkgreen;
+}
+
+.store {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.rocks {
+   flex-basis: 200px;
+   box-sizing: border-box;
+   padding: 20px;
+   margin: 20px;
+   border: 2px solid darkgreen;
+   border-radius: 10px;
+}
+
+
+.jewelry {
+    flex-basis: 200px;
+   box-sizing: border-box;
+   padding: 20px;
+   margin: 20px;
+   border: 2px solid darkgreen;
+   border-radius: 10px;
+}
+.jewelry img {
+    opacity: 0.5;
+}
+
+.furniture {
+    flex-basis: 200px;
+   box-sizing: border-box;
+   padding: 20px;
+   margin: 20px;
+   border: 2px solid darkgreen;
+   border-radius: 10px;
+   
+}
+
+.furniture img {
+    background-position: center;
+}
+
+
+.store h4 {
+    font-size: 20px;
+    padding: 12px;
+    margin: 6px;
+    border-top: 5px solid darkgreen;
+    border-bottom: 5px solid darkgreen;  
+}
+
+.store p {
+    padding: 0px 12px;
+}
+
+.store img {
+    width: 100%;
+    border-radius: 10px;
+    transition: all 0.5s ease-in-out;
+    border-radius: 50%;
+        
+}
+
+.store img:hover {
+    transform: scale(0.95);
+    opacity: 0.5;
+}
+
+.store button {
+    background-color: darkgreen;
+    color: rgb(245, 249, 249);
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    width: 100%;
+    font-size: 12px;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: beige;
+    color: black;
+    text-align: center;
+    padding: 24px;
+
+}
